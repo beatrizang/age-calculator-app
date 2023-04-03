@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root{ 
+--purple: hsl(259, 100%, 65%);
+--light-red: hsl(0, 100%, 67%);
+
+--white: hsl(0, 0%, 100%);
+--off-white: hsl(0, 0%, 94%);
+--light-grey: hsl(0, 0%, 86%);
+--smokey-grey: hsl(0, 1%, 44%);
+--off-black: hsl(0, 0%, 8%);
+}
+
+body{
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    background: var(--white);
+    border-radius: 1.5rem 1.5rem 30% 1.5rem;
+    height: 50vh;
+    padding: 3rem;
+    width: 70vh;
+}
+
+.date{
+    align-items: center;
+    display: flex;
+}
+
+.in{
+    margin-right: 1rem;
+}
+
+.in__title{
+    color: var(--smokey-grey);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.in__input{
+    border: 1.5px solid var(--light-grey);
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    outline: none;
+}
+
+.in__input:focus{
+    border: 1px solid var(--purple);
+}
+
+.in__error{
+    color: var(--light-red);
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+    display: flex;
+}
+
+.separator{
+    align-items: center;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.line{
+    background: var(--light-grey);
+    height: 2px;
+    width: 100%;
+}
+
+.arrow{
+    color: var(--smokey-grey);
+    border-radius: 50%;
+    background: var(--purple);
+    padding: 0.5rem;
+    transition: 0.3s all linear;
+}
+
+.arrow:hover{
+    background: var(--off-black);
+    cursor: pointer;
+}
+
+.out{
+    display: flex;
+    font-size: 3.5rem;
+}
+
+.out__number{
+    color: var(--purple);
+}
+
+.attribution{
+    margin-top: 3rem;
+}
+
+.attribution a{
+    color: var(--purple);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+  <main class="main">
+    <div class="date">
+      <div class="in">
+        <p class="in__title">Day</p>
+        <input id="input__day" class="in__input" type="number" placeholder="DD">
+        <p class="in__error" id="error__day"></p>
+      </div>
+      <div class="in">
+        <p class="in__title">Month</p>
+        <input id="input__month" class="in__input" type="number" placeholder="MM">
+        <p class="in__error" id="error__month"></p>
+      </div>
+      <div class="in">
+        <p class="in__title">Year</p>
+        <input id="input__year" class="in__input" type="number" placeholder="YYYY">
+        <p class="in__error" id="error__year"></p>
+      </div>
+    </div>
+    <div class="separator">
+      <div class="line"></div>
+      <button id="btn-age" onclick="convert()">
+        <img class="arrow" src="./assets/images/icon-arrow.svg" alt="">
+      </button>
+    </div>
+    <div class="age">
+      <div class="out">
+        <p id="output__year" class="out__number">--</p>
+        <p class="out__text">years</p>
+      </div>
+      <div class="out">
+        <p id="output__month" class="out__number">--</p>
+        <p class="out__text">months</p>
+      </div>
+      <div class="out">
+        <p id="output__day" class="out__number">--</p>
+        <p class="out__text">days</p>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>
