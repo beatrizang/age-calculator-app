@@ -61,7 +61,7 @@ function ctrlDay(){
         }
         else{
             errorDay.innerHTML = '';
-            ageDay = todayDay - inputDay
+            ageDay = 31 - inputDay
 
             if(ageDay<0){
                 ageDay*=-1;
@@ -104,7 +104,7 @@ function ctrlYear(){
 }
 
 function showDate(){
-    if(ageDay != 0 && ageMonth != 0 && ageYear != 0){
+    if(ageDay != 0 && ageMonth != 0 && ageYear != 0 && !isNaN(ageDay) && !isNaN(ageMonth) && !isNaN(ageYear)){
         outputDay.innerHTML = ageDay;
         outputMonth.innerHTML = ageMonth;
         outputYear.innerHTML = ageYear;

@@ -21,7 +21,7 @@ body{
     height: 100vh;
 }
 
-main{
+.main{
     background: var(--white);
     border-radius: 1.5rem 1.5rem 30% 1.5rem;
     height: 50vh;
@@ -95,6 +95,9 @@ main{
     display: flex;
     font-size: 3.5rem;
 }
+.out__text{
+    margin-left: 5px;
+}
 
 .out__number{
     color: var(--purple);
@@ -106,4 +109,25 @@ main{
 
 .attribution a{
     color: var(--purple);
+}
+
+@media screen and (max-width: 375px) {
+    .main{
+        height: auto;
+        width: 100%;
+    }
+
+    .in__input{
+        width: 65px;
+    }
+
+    .arrow{
+        align-items: center;
+        justify-content: center;
+        color: var(--smokey-grey);
+        border-radius: 50%;
+        background: var(--purple);
+        padding: 0.5rem;
+        transition: 0.3s all linear;
+    }
 }
